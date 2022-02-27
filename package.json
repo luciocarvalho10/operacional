@@ -1,0 +1,11 @@
+{
+  "name": "OPERACIONAL",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "luciocarvalho10 <luciocarvalho10@hotmail.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "nodemon": "^2.0.15"
+  }
+}
