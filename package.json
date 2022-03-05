@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "luciocarvalho10 <luciocarvalho10@hotmail.com.br>",
   "license": "MIT",
+  "scripts": {
+    "dev:json": "json-server --watch db.json"
+  },
   "dependencies": {
     "json-server": "^0.17.0",
     "nodemon": "^2.0.15"
