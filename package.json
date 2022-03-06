@@ -5,7 +5,8 @@
   "author": "luciocarvalho10 <luciocarvalho10@hotmail.com.br>",
   "license": "MIT",
   "scripts": {
-    "dev:json": "json-server --watch db.json"
+    "dev:json": "json-server --watch db.json",
+    "dev:server": "nodemon server.js"
   },
   "dependencies": {
     "json-server": "^0.17.0",
