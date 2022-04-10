@@ -17,7 +17,8 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 
 // views
-import { HomeComponent } from './views/home/home.component'
+import { HomeComponent } from './views/home/home.component';
+import { FuncionarioComponent } from './views/funcionario/funcionario.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HomeComponent } from './views/home/home.component'
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    FuncionarioComponent
   ],
   imports: [
     BrowserModule,
