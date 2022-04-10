@@ -19,7 +19,8 @@ import { NavComponent } from './components/template/nav/nav.component';
 // views
 import { HomeComponent } from './views/home/home.component';
 import { FuncionarioComponent } from './views/funcionario/funcionario.component';
-import { FuncionarioCreateComponent } from './components/funcionario/funcionario-create/funcionario-create.component'
+import { FuncionarioCreateComponent } from './components/funcionario/funcionario-create/funcionario-create.component';
+import { RedDirective } from './directives/red.directive'
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FuncionarioCreateComponent } from './components/funcionario/funcionario
     NavComponent,
     HomeComponent,
     FuncionarioComponent,
-    FuncionarioCreateComponent
+    FuncionarioCreateComponent,
+    RedDirective
   ],
   imports: [
     BrowserModule,
