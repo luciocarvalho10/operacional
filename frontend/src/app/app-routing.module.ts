@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // views
-import { FuncionarioComponent } from './views/funcionario/funcionario.component';
 import { HomeComponent } from './views/home/home.component';
+import { FuncionarioComponent } from './views/funcionario/funcionario.component';
+import { FuncionarioCreateComponent } from './components/funcionario/funcionario-create/funcionario-create.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: "funcionario",
     component: FuncionarioComponent
+  },
+  {
+    path: "funcionario/criar",
+    component: FuncionarioCreateComponent
   }
 ];
 
