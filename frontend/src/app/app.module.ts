@@ -18,7 +18,8 @@ import { NavComponent } from './components/template/nav/nav.component';
 
 // views
 import { HomeComponent } from './views/home/home.component';
-import { FuncionarioComponent } from './views/funcionario/funcionario.component'
+import { FuncionarioComponent } from './views/funcionario/funcionario.component';
+import { FuncionarioCreateComponent } from './components/funcionario/funcionario-create/funcionario-create.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FuncionarioComponent } from './views/funcionario/funcionario.component'
     FooterComponent,
     NavComponent,
     HomeComponent,
-    FuncionarioComponent
+    FuncionarioComponent,
+    FuncionarioCreateComponent
   ],
   imports: [
     BrowserModule,
