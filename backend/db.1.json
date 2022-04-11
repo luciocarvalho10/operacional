@@ -1,0 +1,112 @@
+{
+  "funcionario":[
+    {
+      "id": "",
+      "matricula": "",
+      "cargo": "",
+      "nome": "",
+      "endereco": {},
+      "posto": [{}],
+      "jornada": [{}],
+      "faltas": [{}],
+      "punicao": [{}],
+      "historico": {}
+    }
+  ],
+  "cargo": [
+    {
+      "id": "",
+      "nome": "",
+      "funcionario": [{}]
+    }
+  ],
+  "endereco":[
+    {
+      "id": "",
+      "rua": "",
+      "numero": "",
+      "bairro": "",
+      "municipio": "",
+      "agente": [{}],
+      "posto": {}
+    }
+  ],
+  "jornada":[
+    {
+      "id": "",
+      "cargo": [{}],
+      "posto": [{}],
+      "turno": {},
+      "horas": ""
+    }
+  ],
+  "turno":[
+    {
+      "id": "",
+      "tipo": "",
+      "inicio": "",
+      "fim": "",
+      "jornada": [{}]
+    }
+  ],
+  "posto":[
+    {
+      "id": "",
+      "nome": "",
+      "endereco": "",
+      "agente": [{}],
+      "jornada": [{}]
+    }
+  ],
+  "troca":[
+    {
+      "id": "",
+      "data": [],
+      "autorizada": "",
+      "autor": {},
+      "efetivada": "",
+      "requerente": {},
+      "posto": {
+        "antigo": [{}],
+        "atual": {}
+      },
+      "agente": {
+        "antigo": [{}],
+        "atual": {}
+      }
+    }
+  ],
+  "historico":[
+    {
+    "id": "",
+    "data": [],
+    "agente": {},
+    "faltas": [{}],
+    "trocas": [{}],
+    "punicao": [{}]
+    }
+  ],
+  "punicao":[
+    {
+      "id": "",
+      "tipo": "",
+      "data": "",
+      "aplicada": "",
+      "dias": "",
+      "autor": {},
+      "agente": {}
+    }
+  ],
+  "falta":[
+    {
+      "id": "",
+      "data": "",
+      "motivo": "",
+      "abona": "",
+      "dias": "",
+      "obs": "",
+      "agente": {},
+      "punicao": {}
+    }
+  ]
+}
