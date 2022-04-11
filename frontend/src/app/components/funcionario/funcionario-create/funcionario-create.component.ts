@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FuncionarioService } from './../funcionario.service';
 import { Router } from '@angular/router';
+import { IFuncionario } from '../funcionario.model';
 
 @Component({
   selector: 'app-funcionario-create',
@@ -9,14 +10,25 @@ import { Router } from '@angular/router';
 })
 export class FuncionarioCreateComponent implements OnInit {
 
+  funcionario: IFuncionario = {
+    nome: 'Lucio',
+    cargo: 'AGRS'
+  }
+
   constructor(private funcionarioService: FuncionarioService,
     private router: Router) { }
 
   ngOnInit(): void { }
 
-  createFuncionario() {
-    this.funcionarioService.showMessage('Funcionário criado')
+  createFuncionario(): void {
+    this.funcionarioService.create(this.funcionario).subscribe(() => {
+
+      this.funcionarioService.showMessage('Funcionário criado')
+
+      this.cancel()
+    })
   }
+
   cancel() {
     this.router.navigate(['/funcionario'])
   }
