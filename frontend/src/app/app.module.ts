@@ -11,6 +11,7 @@ import { MatListModule } from '@angular/material/list'
 import { MatCardModule } from '@angular/material/card'
 import { MatButtonModule } from '@angular/material/button'
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { HttpClientModule } from '@angular/common/http'
 
 // style
 import { RedDirective } from './directives/red.directive'
@@ -46,7 +47,8 @@ import { FuncionarioCreateComponent } from './components/funcionario/funcionario
     MatListModule,
     MatCardModule,
     MatButtonModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
