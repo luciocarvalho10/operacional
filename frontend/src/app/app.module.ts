@@ -9,6 +9,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatListModule } from '@angular/material/list'
 import { MatCardModule } from '@angular/material/card'
+import { MatButtonModule } from '@angular/material/button'
+
+// style
+import { RedDirective } from './directives/red.directive'
 
 // components
 import { AppComponent } from './app.component';
@@ -20,7 +24,6 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
 import { FuncionarioComponent } from './views/funcionario/funcionario.component';
 import { FuncionarioCreateComponent } from './components/funcionario/funcionario-create/funcionario-create.component';
-import { RedDirective } from './directives/red.directive'
 
 @NgModule({
   declarations: [
@@ -40,7 +43,8 @@ import { RedDirective } from './directives/red.directive'
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
