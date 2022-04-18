@@ -15,6 +15,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table'
+import { MatPaginatorModule } from '@angular/material/paginator'
+import { MatSortModule } from '@angular/material/sort'
 
 // style
 import { RedDirective } from './directives/red.directive'
@@ -24,11 +27,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
+import { FuncionarioCreateComponent } from './components/funcionario/funcionario-create/funcionario-create.component';
+import { FuncionarioReadComponent } from './components/funcionario/funcionario-read/funcionario-read.component';
 
 // views
 import { HomeComponent } from './views/home/home.component';
 import { FuncionarioComponent } from './views/funcionario/funcionario.component';
-import { FuncionarioCreateComponent } from './components/funcionario/funcionario-create/funcionario-create.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,8 @@ import { FuncionarioCreateComponent } from './components/funcionario/funcionario
     HomeComponent,
     FuncionarioComponent,
     FuncionarioCreateComponent,
-    RedDirective
+    RedDirective,
+    FuncionarioReadComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +59,10 @@ import { FuncionarioCreateComponent } from './components/funcionario/funcionario
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

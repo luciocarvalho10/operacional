@@ -24,4 +24,8 @@ export class FuncionarioService {
   create(funcionario: IFuncionario): Observable<IFuncionario> {
     return this.http.post<IFuncionario>(this.baseUrl, funcionario)
   }
+
+  read(): Observable<IFuncionario[]> {
+    return this.http.get<IFuncionario[]>(this.baseUrl)
+  }
 }
