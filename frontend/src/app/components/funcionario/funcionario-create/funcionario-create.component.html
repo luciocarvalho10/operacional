@@ -1,7 +1,28 @@
-<button mat-raised-button (click)="createFuncionario()" color="primary">
-  Criar
-</button>
+<mat-card>
+  <mat-card-title>Novo Funcionario</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Nome"
+        [(ngModel)]="funcionario.nome"
+        name="name"
+      >
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Cargo"
+        [(ngModel)]="funcionario.cargo"
+        name="cargo"
+      >
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="createFuncionario()" color="primary">
+    Criar
+  </button>
 
-<button mat-raised-button (click)="cancel()" color="secondary">
-  Cancelar
-</button>
+  <button mat-raised-button (click)="cancel()" color="secondary">
+    Cancelar
+  </button>
+</mat-card>
