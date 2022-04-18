@@ -1,9 +1,9 @@
 {
   "funcionario":[
     {
-      "id": "",
-      "cargo": "",
-      "nome": ""
+      "id": "1",
+      "cargo": "AGRS",
+      "nome": "Lucio"
     }
   ]
 }
