@@ -33,4 +33,9 @@ export class FuncionarioService {
     const url = `${this.baseUrl}/${id}`
     return this.http.get<IFuncionario>(url)
   }
+
+  update(funcionario: IFuncionario): Observable<IFuncionario> {
+    const url = `${this.baseUrl}/${funcionario.id}`
+    return this.http.put<IFuncionario>(url, funcionario)
+  }
 }
