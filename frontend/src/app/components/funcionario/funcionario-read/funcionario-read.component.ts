@@ -15,10 +15,6 @@ export class FuncionarioReadComponent implements OnInit {
   constructor(private funcionarioService: FuncionarioService) { }
 
   ngOnInit(): void {
-    this.funcionarioService.read().subscribe(f => {
-      this.funcionario = f
-      console.log(f)
-    })
+    this.funcionarioService.read().subscribe(f => this.funcionario = f)
   }
-
 }
