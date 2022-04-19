@@ -28,4 +28,9 @@ export class FuncionarioService {
   read(): Observable<IFuncionario[]> {
     return this.http.get<IFuncionario[]>(this.baseUrl)
   }
+
+  readById(id: string): Observable<IFuncionario> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.get<IFuncionario>(url)
+  }
 }
