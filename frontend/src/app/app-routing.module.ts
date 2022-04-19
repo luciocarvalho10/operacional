@@ -6,6 +6,7 @@ import { HomeComponent } from './views/home/home.component';
 import { FuncionarioComponent } from './views/funcionario/funcionario.component';
 import { FuncionarioCreateComponent } from './components/funcionario/funcionario-create/funcionario-create.component';
 import { FuncionarioUpdateComponent } from './components/funcionario/funcionario-update/funcionario-update.component';
+import { FuncionarioDeleteComponent } from './components/funcionario/funcionario-delete/funcionario-delete.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: "funcionario/atualizar/:id",
     component: FuncionarioUpdateComponent
+  },
+  {
+    path: "funcionario/deletar/:id",
+    component: FuncionarioDeleteComponent
   }
 ];
 
