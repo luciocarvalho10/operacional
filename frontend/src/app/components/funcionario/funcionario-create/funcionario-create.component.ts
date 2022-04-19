@@ -11,8 +11,8 @@ import { IFuncionario } from '../funcionario.model';
 export class FuncionarioCreateComponent implements OnInit {
 
   funcionario: IFuncionario = {
-    nome: 'Lucio',
-    cargo: 'AGRS'
+    nome: '',
+    cargo: ''
   }
 
   constructor(private funcionarioService: FuncionarioService,
