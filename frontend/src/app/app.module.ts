@@ -34,6 +34,7 @@ import { FuncionarioReadComponent } from './components/funcionario/funcionario-r
 import { HomeComponent } from './views/home/home.component';
 import { FuncionarioComponent } from './views/funcionario/funcionario.component';
 import { FuncionarioUpdateComponent } from './components/funcionario/funcionario-update/funcionario-update.component';
+import { FuncionarioDeleteComponent } from './components/funcionario/funcionario-delete/funcionario-delete.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { FuncionarioUpdateComponent } from './components/funcionario/funcionario
     FuncionarioCreateComponent,
     RedDirective,
     FuncionarioReadComponent,
-    FuncionarioUpdateComponent
+    FuncionarioUpdateComponent,
+    FuncionarioDeleteComponent
   ],
   imports: [
     BrowserModule,
