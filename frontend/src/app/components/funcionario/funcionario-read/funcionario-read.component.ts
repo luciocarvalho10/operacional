@@ -10,7 +10,7 @@ import { FuncionarioService } from '../funcionario.service';
 export class FuncionarioReadComponent implements OnInit {
 
   funcionario: IFuncionario[] = []
-  displayedColumns: String[] = ['id', 'nome', 'cargo']
+  displayedColumns: String[] = ['id', 'nome', 'cargo', 'acao']
 
   constructor(private funcionarioService: FuncionarioService) { }
 
